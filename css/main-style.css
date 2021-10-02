@@ -169,6 +169,7 @@ p:hover,
 .details:hover{
   cursor: pointer;
   background-color: #34397b;
+}
 /* if i want to animate the (deatails box) */
 /* @keyframes moving{
   to{
@@ -183,5 +184,3 @@ p:hover,
   animation-name: moving;
   animation-duration: 3s;
 } */
-
-/* responsive */
