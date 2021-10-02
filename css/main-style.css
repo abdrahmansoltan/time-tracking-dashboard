@@ -39,9 +39,10 @@ body {
   position: relative;
   width: 200px;
   padding: 20px;
+  z-index: 2;
 }
 .down {
-  z-index: -1;
+  z-index: 1;
   height: 170px;
   border-radius: 5%;
   position: relative;
@@ -86,7 +87,6 @@ p {
   min-height: 170px;
   border-radius: 5%;
   position: relative;
-  z-index: -1;
   top: -12px;
   padding: 20px;
   background-color: var(--Dark-blue);
