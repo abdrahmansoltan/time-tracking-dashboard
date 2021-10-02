@@ -18,11 +18,15 @@ body {
   font-size: 11px;
   background-color: #0d1323;
 }
+
 .container {
+  /* position: absolute;
+  top: 25%;
+  left: 25%; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 15px 20px;
+  grid-gap: 20px;
 }
 
 /* leftbox start */
@@ -77,11 +81,52 @@ p {
   border-radius: 8px;
   height: 30px;
 }
+.play {
+  background-color: #56c2e6;
+  z-index: -2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  height: 30px;
+}
+.study {
+  background-color: #ff5e7d;
+  z-index: -2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  height: 30px;
+}
+.exercise {
+  background-color: #4bcf83;
+  z-index: -2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  height: 30px;
+}
+.social {
+  background-color: #7235d1;
+  z-index: -2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  height: 30px;
+}
+.self-care {
+  background-color: #f1c75b;
+  z-index: -2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  height: 30px;
+}
 .box img {
   position: absolute;
   right: -5px;
-  top: -20px;
-  transform: scale(0.65);
+  top: -16px;
+  transform: scale(0.7);
+  opacity: 50%;
 }
 .details {
   min-height: 170px;
@@ -104,10 +149,14 @@ p {
   right: 16px;
   top: 0;
 }
-
+.details div:first-child {
+  font-weight: bold;
+  font-size: 12px;
+}
 /* box end */
 
-p:hover {
+p:hover,
+.icon:hover {
   color: white;
   cursor: pointer;
 }
