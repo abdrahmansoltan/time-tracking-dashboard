@@ -22,9 +22,6 @@ body {
 }
 
 .container {
-  /* position: absolute;
-  top: 25%;
-  left: 25%; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -33,7 +30,7 @@ body {
 
 /* leftbox start */
 .boxleft {
-  width: 200px;
+  /* width: 200px; */
   position: relative;
   grid-area: 1/1/3/2;
 }
@@ -43,7 +40,7 @@ body {
   height: 280px;
   border-radius: 5%;
   position: relative;
-  width: 200px;
+  /* width: 200px; */
   padding: 20px;
   z-index: 2;
 }
@@ -166,7 +163,7 @@ p:hover,
   text-align: center;
   margin: 20px;
 }
-.details:hover{
+.details:hover {
   cursor: pointer;
   background-color: #34397b;
 }
@@ -184,3 +181,47 @@ p:hover,
   animation-name: moving;
   animation-duration: 3s;
 } */
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxleft {
+    margin-bottom: -5px;
+  }
+  .box {
+    margin-top: -25px;
+  }
+  h1,
+  .box h1 {
+    font-size: 16px;
+    display: inline-block;
+  }
+  .details p {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+  }
+  .details {
+    height: auto;
+  }
+  .up,
+  .down {
+    display: flex;
+    width: 320px;
+    overflow-wrap: break-word;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .details {
+    height: auto;
+  }
+
+  .boxleft img {
+    height: 60px;
+    margin-bottom: -10px;
+    display: inline-block;
+  }
+}
