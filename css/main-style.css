@@ -160,3 +160,8 @@ p:hover,
   color: white;
   cursor: pointer;
 }
+.attribution{
+  display: flex;
+  align-self: center;
+  justify-self: flex-end;
+}
