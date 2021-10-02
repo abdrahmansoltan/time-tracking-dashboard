@@ -12,11 +12,13 @@
   box-sizing: border-box;
 }
 body {
+  font-size: 11px;
+  background-color: #0d1323;
+}
+.page {
   display: flex;
   justify-content: center;
   align-content: center;
-  font-size: 11px;
-  background-color: #0d1323;
 }
 
 .container {
@@ -129,7 +131,7 @@ p {
   opacity: 50%;
 }
 .details {
-  min-height: 170px;
+  height: 170px;
   border-radius: 5%;
   position: relative;
   top: -12px;
@@ -142,6 +144,7 @@ p {
   margin-bottom: -7px;
   margin-top: 15px;
 }
+
 .icon {
   position: absolute;
   color: #abafde;
@@ -150,8 +153,7 @@ p {
   top: 0;
 }
 .details div:first-child {
-  font-weight: bold;
-  font-size: 12px;
+  font-size: 18px;
 }
 /* box end */
 
@@ -160,8 +162,26 @@ p:hover,
   color: white;
   cursor: pointer;
 }
-.attribution{
-  display: flex;
-  align-self: center;
-  justify-self: flex-end;
+.attribution {
+  text-align: center;
+  margin: 20px;
 }
+.details:hover{
+  cursor: pointer;
+  background-color: #34397b;
+/* if i want to animate the (deatails box) */
+/* @keyframes moving{
+  to{
+  top: -42px;
+  height: 200px;
+  
+  }
+}
+.details:hover{
+  cursor: pointer;
+  background-color: #34397b;
+  animation-name: moving;
+  animation-duration: 3s;
+} */
+
+/* responsive */
